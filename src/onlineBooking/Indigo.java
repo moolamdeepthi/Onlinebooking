@@ -25,6 +25,9 @@ public class Indigo {
 		List<WebElement>inputdata=driver.findElements(By.xpath(".//*[@class='input form-text']"));
 		System.out.println(inputdata.size());
 		inputdata.get(0).sendKeys("10-3-2016");
+		WebElement Namedropdown = driver.findElement(By.xpath(".//*[@id='edit-name']"));
+		Select NameDd= new Select(Namedropdown);
+		NameDd.selectByIndex(2);
 		List<WebElement>firstname=driver.findElements(By.xpath(".//*[@class='input form-text']"));
 		firstname.get(1).sendKeys("deepthi");
 		List<WebElement>middlename=driver.findElements(By.xpath(".//*[@class='input form-text']"));
