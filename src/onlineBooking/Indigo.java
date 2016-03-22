@@ -43,10 +43,8 @@ public class Indigo {
 		List<WebElement>cityname=driver.findElements(By.xpath(".//*[@class='input form-text']"));
 		cityname.get(7).sendKeys("Banglore");
 		driver.findElement(By.xpath(".//*[@id='bookingenquiry-form']/div/div/div/div[6]/div/div/label")).sendKeys("24-02-2016");
-	
-	
-	
-	
+
+//Testing
 	}
 
 }
